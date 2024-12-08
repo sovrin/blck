@@ -1,0 +1,45 @@
+{
+  "name": "blck",
+  "version": "0.1.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "exports": "./dist/index.js",
+  "types": "./types/index.d.ts",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc --project tsconfig.prod.json",
+    "watch": "tsc --watch",
+    "dev": "ts-node -T temp/backup/index.ts",
+    "test": "mocha -r ts-node/register/transpile-only 'test/tokenizer.test.ts'",
+    "test:watch": "mocha -r ts-node/register/transpile-only 'test/**/*.ts' --watch --watch-files src/**/*,test/**/*",
+    "coverage": "nyc npm test"
+  },
+  "files": [
+    "dist",
+    "types"
+  ],
+  "author": {
+    "name": "",
+    "email": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT",
+  "keywords": [],
+  "devDependencies": {
+    "@types/chai": "^4.3.16",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.10.1",
+    "chai": "^5.1.2",
+    "mocha": "^11.0.1",
+    "nyc": "^17.1.0",
+    "onia": "^0.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2",
+    "@typescript-eslint/eslint-plugin": "^6",
+    "@typescript-eslint/parser": "^6",
+    "eslint": "^8"
+  }
+}

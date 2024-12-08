@@ -1,0 +1,13 @@
+<expression>  ::= <rule> ( <space> "|" <space> <rule> )*
+<rule>        ::= <function> ( <space> <function> )*
+<function>    ::= <key> ( ":" <key> )? ( <args> )? ( <quantifier> )?
+<args>        ::= "(" <space> <value> <space> ( "," <space> <value> <space> )* ")"
+<quantifier>  ::= "*"
+<space>       ::= " "*
+<literal>     ::= "\"" <letter> "\""
+<value>       ::= <character> ( <character> )*
+<key>         ::= <letter> ( <letter> | <character> )*
+<character>   ::= <letter> | <digit>
+<punctuation> ::= "."
+<letter>      ::= [a-z]
+<digit>       ::= [0-9]

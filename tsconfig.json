@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES5",
+    "moduleResolution": "Node",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "declaration": true,
+    "declarationDir": "./types"
+  },
+  "files": ["./src/types/global.d.ts"],
+  "exclude": [
+    "test/**"
+  ],
+  "include": [
+    "src/**/*"
+  ]
+}
