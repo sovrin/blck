@@ -1,5 +1,5 @@
 # blck
 
 ## Description
-Library for parsing and transforming strings into code.
+Library for parsing, interpreting and strings. Kind of like splunk, but way worse.
 
